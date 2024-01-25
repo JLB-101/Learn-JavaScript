@@ -606,7 +606,10 @@ var Player = testObj[playerNumber];
 console.log(Player);
 
 
-//function ourFunctionWith
-// for (var i=0; i <= ourArray.length-1; i++){
-//     console.log(ourArray[i]);
-// }
+// Updating Object Properties
+//accessing ourDog.name
+console.log();
+myDog.friends = ["freeCodeCamp Campers"];
+ourDog.name = "Happy Camper";
+myDog.name = "Happy coder";
+
