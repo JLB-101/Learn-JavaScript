@@ -613,3 +613,29 @@ myDog.friends = ["freeCodeCamp Campers"];
 ourDog.name = "Happy Camper";
 myDog.name = "Happy coder";
 
+// Delete Properties From an Object
+ delete myDog.tails;
+ 
+ // Using Objects for LooKups
+ function phoneticLookup(v) {
+     var r = "";
+     // Only change code below this line
+     var lookup = {
+         "alpha": "adams",
+         "bravo": "Boston",
+         "charlie": "Chicago",
+         "echo":"Easy",
+         "foxtrot":"Frank",
+     };
+     /*switch(v) {
+         case "Alpha": r="Adams";break;
+         case "Bravo": r="Boston";break;
+         case "charlie": r="Chicago";break;
+         case "delta": r="Denver";break;
+         case "echo": r="Easy";break;
+         case "foxtrot": r="Frank"; break;
+     }*/
+     r = lookup[v]
+     return r;
+ }
+ console.log(phoneticLookup("echo"));
