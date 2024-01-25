@@ -729,53 +729,53 @@ var myPlants = [
 var secondTree = myPlants[1].list[0]; //accessing 2 index[1]--"trees"
 console.log(secondTree);
 
-// // Record Collection 
-// var collection = {
-//    "2548":{
-//        "album": "Slippery When Wet",
-//        "artist": "Bon Jovi",
-//        "tracks": [
-//            "Let It  Rock",
-//            "You Give Love a Bad Name"
-//        ]
-//    },
-//    "2568":{
-//        "album": "1999",
-//        "artist": "Price",
-//        "tracks": [
-//            "1999",
-//            "Little Red Corvette"
-//        ]
-//    },
-//    "1245":{
-//      //  "album": "",
-//        "artist": "Robert Palmer",
-//        "tracks": [ ]
-//    },
-//    "5439":{
-//        "album": "ABBA Gold",
-//        //"artist": "",
-//        //"tracks": []
-//    },
-// };
-// // Keep a copy of the collection for tests 
-// var collectionCopy = JSON.parse(JSON.stringify(collection));
+// Record Collection 
+var collection = {
+   "2548":{
+       "album": "Slippery When Wet",
+       "artist": "Bon Jovi",
+       "tracks": [
+           "Let It  Rock",
+           "You Give Love a Bad Name"
+       ]
+   },
+   "2568":{
+       "album": "1999",
+       "artist": "Price",
+       "tracks": [
+           "1999",
+           "Little Red Corvette"
+       ]
+   },
+   "1245":{
+     //  "album": "",
+       "artist": "Robert Palmer",
+       "tracks": [ ]
+   },
+   "5439":{
+       "album": "ABBA Gold",
+       //"artist": "",
+       //"tracks": []
+   },
+};
+// Keep a copy of the collection for tests 
+var collectionCopy = JSON.parse(JSON.stringify(collection));
 
-// // only change code below this line
-// function updateRecords(id, prop, value) {
-//    if(value === ""){
-//        delete collection[id][prop];// delete if our value is empty string
-//    }else if(prop === "tracks") {
-//        //if tracks is empty, will be create
-//        collection[id][prop] = collection[id][prop] || [];
-//        collection[id][prop].push(value);
-//    }else{//if isn't value blank and property isn't track
-//        //just set the property to equal the value 
-//        collection[id][prop] = value;
-//    }
-// //
-// return collection;   
-// }
+// only change code below this line
+function updateRecords(id, prop, value) {
+   if(value === ""){
+       delete collection[id][prop];// delete if our value is empty string
+   }else if(prop === "tracks") {
+       //if tracks is empty, will be create
+       collection[id][prop] = collection[id][prop] || [];
+       collection[id][prop].push(value);
+   }else{//if isn't value blank and property isn't track
+       //just set the property to equal the value 
+       collection[id][prop] = value;
+   }
+//
+return collection;   
+}
 
-// // Alter values below to test your code
-// console.log(updateRecords(5439, "artist", "ABBA"))
+// Alter values below to test your code
+console.log(updateRecords(5439, "artist", "ABBA"))
