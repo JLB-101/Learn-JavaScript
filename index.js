@@ -639,3 +639,143 @@ myDog.name = "Happy coder";
      return r;
  }
  console.log(phoneticLookup("echo"));
+
+ // Testing Objects for Properties 
+ //setup 
+ var myObj = {
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh"
+};
+
+function checkObj(checkProp) {
+    // your code Here
+    if (myObj.hasOwnProperty(checkProp)){
+       return myObj[checkProp];
+    }else {
+        return "Not Found";
+    }
+    return "Change Me!";
+}
+// test your code by modifying these values
+console.log(checkObj("gift"));
+
+// // Manipulating Complex Objects
+// var myMusic = [
+//    {
+//        "artist": "Billy Joel",
+//        "title": "piano Man",
+//        "release_year": 1973,
+//        "formats": [
+//            "CD",
+//            "8T",
+//            "LP"
+//        ],
+//        "gold":true
+//    }, 
+//    {
+//    // add record here
+//     "artist": "Beau Carnes",
+//        "title": "Careal Man",
+//        "release_year": 2003,
+//        "formats": [
+//            "YouTube video",
+//            "8T",
+//            "LP"
+//        ],
+//        "gold":true
+//  },  
+// ];
+
+// // Setup
+// var myStorage = {
+//  "car":{
+//      "inside": {
+//          "glove box": "maps",
+//          "passenger seat": "crumbs" 
+//      },//inside
+//      "outside":{
+//          "trunk": "jack"
+//      }//outside
+//  }//car  
+// };
+
+// var gloveBoxContents = myStorage.car.inside["glove box"];// acessing inside
+// //console.log(gloveBoxContents);
+
+// // Accessing Nested Arrays
+// //Setup
+// var myPlants = [
+//    {
+//        type: "flowers",
+//        list: [
+//            "rose",
+//            "tulip",
+//            "dandelion"
+//        ]
+//    },
+//    {
+//        type: "trees",
+//        list: [
+//            "fir",
+//            "pine",
+//            "birch"
+//        ]
+//    },
+// ];
+
+// //Only Change code below this line
+
+// var secondTree = myPlants[1].list[0]; //accessing 2 index[1]--"trees"
+// console.log(secondTree);
+
+// // Record Collection 
+// var collection = {
+//    "2548":{
+//        "album": "Slippery When Wet",
+//        "artist": "Bon Jovi",
+//        "tracks": [
+//            "Let It  Rock",
+//            "You Give Love a Bad Name"
+//        ]
+//    },
+//    "2568":{
+//        "album": "1999",
+//        "artist": "Price",
+//        "tracks": [
+//            "1999",
+//            "Little Red Corvette"
+//        ]
+//    },
+//    "1245":{
+//      //  "album": "",
+//        "artist": "Robert Palmer",
+//        "tracks": [ ]
+//    },
+//    "5439":{
+//        "album": "ABBA Gold",
+//        //"artist": "",
+//        //"tracks": []
+//    },
+// };
+// // Keep a copy of the collection for tests 
+// var collectionCopy = JSON.parse(JSON.stringify(collection));
+
+// // only change code below this line
+// function updateRecords(id, prop, value) {
+//    if(value === ""){
+//        delete collection[id][prop];// delete if our value is empty string
+//    }else if(prop === "tracks") {
+//        //if tracks is empty, will be create
+//        collection[id][prop] = collection[id][prop] || [];
+//        collection[id][prop].push(value);
+//    }else{//if isn't value blank and property isn't track
+//        //just set the property to equal the value 
+//        collection[id][prop] = value;
+//    }
+// //
+// return collection;   
+// }
+
+// // Alter values below to test your code
+// console.log(updateRecords(5439, "artist", "ABBA"))
