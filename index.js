@@ -660,48 +660,48 @@ function checkObj(checkProp) {
 // test your code by modifying these values
 console.log(checkObj("gift"));
 
-// // Manipulating Complex Objects
-// var myMusic = [
-//    {
-//        "artist": "Billy Joel",
-//        "title": "piano Man",
-//        "release_year": 1973,
-//        "formats": [
-//            "CD",
-//            "8T",
-//            "LP"
-//        ],
-//        "gold":true
-//    }, 
-//    {
-//    // add record here
-//     "artist": "Beau Carnes",
-//        "title": "Careal Man",
-//        "release_year": 2003,
-//        "formats": [
-//            "YouTube video",
-//            "8T",
-//            "LP"
-//        ],
-//        "gold":true
-//  },  
-// ];
+// Manipulating Complex Objects
+var myMusic = [
+   {
+       "artist": "Billy Joel",
+       "title": "piano Man",
+       "release_year": 1973,
+       "formats": [
+           "CD",
+           "8T",
+           "LP"
+       ],
+       "gold":true
+   }, 
+   {
+   // add record here
+    "artist": "Beau Carnes",
+       "title": "Careal Man",
+       "release_year": 2003,
+       "formats": [
+           "YouTube video",
+           "8T",
+           "LP"
+       ],
+       "gold":true
+ },  
+];
 
-// // Setup
-// var myStorage = {
-//  "car":{
-//      "inside": {
-//          "glove box": "maps",
-//          "passenger seat": "crumbs" 
-//      },//inside
-//      "outside":{
-//          "trunk": "jack"
-//      }//outside
-//  }//car  
-// };
+// Setup
+var myStorage = {
+ "car":{
+     "inside": {
+         "glove box": "maps",
+         "passenger seat": "crumbs" 
+     },//inside
+     "outside":{
+         "trunk": "jack"
+     }//outside
+ }//car  
+};
 
-// var gloveBoxContents = myStorage.car.inside["glove box"];// acessing inside
-// //console.log(gloveBoxContents);
+var gloveBoxContents = myStorage.car.inside["glove box"];// acessing inside
+//console.log(gloveBoxContents);
 
 // // Accessing Nested Arrays
 // //Setup
