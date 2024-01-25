@@ -887,3 +887,49 @@ var i = 10;
     i++;
 } while (i < 5);  
 
+// Profile Lookup
+
+var contacts =[
+    {
+       "firstName": "harry",
+       "lastName": "Potter",
+       "number": "0543236543",
+       "likes": ["Pizz", "Coding", "Brownie Points"],
+    
+    },
+    {
+       "firstName": "harry",
+       "lastName": "Potter",
+       "number": "0994372684",
+       "likes": ["Hogwarts", "Magic", "Hagrid"],
+    
+    },
+    {
+       "firstName": "sharlock",
+       "lastName": "Holmes",
+       "number": "0487445643",
+       "likes": ["Intriguig Cases", "Violin", ""],
+    
+    },
+    {
+       "firstName": "Kristian",
+       "lastName": "Vos",
+       "number": "unknown",
+       "likes": ["JavaScript", "gaming", "Foxes"],
+    
+    },
+];
+
+function lookUpProfile(name, prop) {
+    for (var i = 0; i < contacts.length; i++) {
+        if(contacts[i].firstName === name) {
+            return contacts[i][prop] || "Not such property";
+        }
+    }
+    return "No such Contact"
+}
+//Change these values to test your function
+var data = lookUpProfile("sharlock", "likes");
+
+console.log(data);
+
