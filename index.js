@@ -778,4 +778,31 @@ return collection;
 }
 
 // Alter values below to test your code
-console.log(updateRecords(5439, "artist", "ABBA"))
+console.log(updateRecords(5439, "artist", "ABBA"));
+
+/**Iterate With Loops */
+// the array is empty 
+var myArray = [
+    
+];
+var i = 0;
+while(i < 5) {
+  // put values in array    
+    myArray.push(i); 
+    i++;
+}
+console.log(myArray);
+
+//Iterate with For Loops
+//ex:
+ ourArray = [];
+ 
+ for (var i=0; i< 5; i++) {
+     ourArray.push(i);
+ }
+ 
+ // setup 
+ var myArray = [];
+ 
+ // only change code below this line
+ 
