@@ -808,4 +808,12 @@ console.log(myArray);
  for (var i = 1; i < 6; i++) {
     myArray.push(i);
 }
-console.log(myArray )
+console.log(myArray );
+
+//Iterate Odd Numbers with a for Loop
+ourArray = [];
+ 
+for (var i = 0; i < 10; i+=2) {
+   myArray.push(i);
+}
+console.log(myArray);
