@@ -703,31 +703,31 @@ var myStorage = {
 var gloveBoxContents = myStorage.car.inside["glove box"];// acessing inside
 //console.log(gloveBoxContents);
 
-// // Accessing Nested Arrays
-// //Setup
-// var myPlants = [
-//    {
-//        type: "flowers",
-//        list: [
-//            "rose",
-//            "tulip",
-//            "dandelion"
-//        ]
-//    },
-//    {
-//        type: "trees",
-//        list: [
-//            "fir",
-//            "pine",
-//            "birch"
-//        ]
-//    },
-// ];
+// Accessing Nested Arrays
+//Setup
+var myPlants = [
+   {
+       type: "flowers",
+       list: [
+           "rose",
+           "tulip",
+           "dandelion"
+       ]
+   },
+   {
+       type: "trees",
+       list: [
+           "fir",
+           "pine",
+           "birch"
+       ]
+   },
+];
 
-// //Only Change code below this line
+//Only Change code below this line
 
-// var secondTree = myPlants[1].list[0]; //accessing 2 index[1]--"trees"
-// console.log(secondTree);
+var secondTree = myPlants[1].list[0]; //accessing 2 index[1]--"trees"
+console.log(secondTree);
 
 // // Record Collection 
 // var collection = {
