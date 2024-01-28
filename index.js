@@ -1081,3 +1081,16 @@ function freezeObj() {
 
 const PI = freezeObj();
 console.log(PI);
+
+/**Use Arrow Function to Write Concise Anonymous Functions **/
+//function(){} anonymous function you can convert to => function
+// var magic = function() {
+//     return new Date();
+// }
+//ex:
+// var magic = () => {
+//     return new Date();
+// };
+
+// more simple
+var magic = () => new Date();
