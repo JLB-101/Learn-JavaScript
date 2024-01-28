@@ -966,3 +966,69 @@ function randomRange(myMin, myMax) {
 
 var myRandom = randomRange(5, 15);
 console.log(myRandom);
+
+
+//************Use the parseInt Function************** */
+// var str;
+// function convertToInteger(str) {
+//     return parseInt(Str);
+// }
+// convertToInteger("56"); 
+
+// Use the parseInt Fuction with a Radix
+// function convertToInteger(str) {
+//     return parseInt(Str);
+// }  
+
+// convertToInteger("10011");
+
+// Use the Conditional (Ternary) Operator
+// condition ? statement-if-true : statement-if-false
+function checkEqual (a, b) {
+    // if(a === b) {
+    //     return true;
+    // }else {
+    //     return false;
+    // }
+ //return a === b ? true : false;
+ return a===b;   
+}
+checkEqual(1,2);
+
+// Use Multiple Conditional (Ternary) Operators
+
+function checkSign (num) {
+    // if ( num > 0): "positive"
+    // if ( num < 0): "negative"
+    // 
+    return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+console.log(checkign(10));
+
+// Differences Between the var and let Keywords
+var catName = "Quincy";
+var quote;
+
+ catName = "Baeau";
+
+function catTalk(){
+    "use strict";
+    
+    catName = "olivers";
+    quote = catName + "says Meow";
+}
+catTalk();
+
+// Compare Scopes of the var and let Keywords
+function checkScope() {
+    "use  Strict"; 
+    var i = "function";
+    if (true) {
+        i = "block scope";
+    console.log("Block scope i is:", i);
+}
+console.log("Function scope i is: ", i);
+return i;
+}
+
+checkScope();
