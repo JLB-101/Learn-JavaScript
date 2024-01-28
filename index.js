@@ -1094,3 +1094,11 @@ console.log(PI);
 
 // more simple
 var magic = () => new Date();
+
+// Write Arrow Functions with PArameters
+// var myConcat = function (arr1, arr2) {
+//     return arr1.concat(arr2);
+// };
+// convert into arrow functions
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
+console.log(myConcat([1,2], [3, 4, 5]));
