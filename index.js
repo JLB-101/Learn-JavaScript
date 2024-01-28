@@ -1032,3 +1032,18 @@ return i;
 }
 
 checkScope();
+
+/**Declare a Read-oly Variable with thw const Keyword */
+function printManyTimes(str) {
+    "use strict";
+    
+    //var sentence = str + "is cool!";
+   const SENTENCE = str + "is cool!";
+  //  SENTENCE = str + "is amazing";
+    
+    for(let i = 0; i < str.length; i+=2){
+    console.log(SENTENCE);
+    }
+    
+}
+printManyTimes("FreeCodeCamp");
