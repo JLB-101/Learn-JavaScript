@@ -1145,3 +1145,13 @@ const sum = (function()  {
 })();
 
 console.log(sum(1,2,3));
+
+// USe the Spread Operator to Evalue Arrays In-place
+const arr1 = ['JAN', 'FAB', 'MAR', 'APR', 'MAY'];
+let arr2;
+(function (){
+    //arr2 = arr1; // change this line
+     arr2 = [...arr1]; //to this
+    arr1[0] = 'potato';
+})();
+console.log(arr2);
