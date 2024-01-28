@@ -1059,3 +1059,25 @@ function editInPlace() {
 } 
 editInPlace();
 console.log(s);
+
+// prevent Object Mutation
+
+function freezeObj() {
+    "use strict";
+    const MATH_CONSTANTS = {
+        PI:3.14
+    }
+    // to not change
+    Object.freeze(MATH_CONSTANTS);// now try will fail
+    
+    // this code is for: try to change 3.14 to 99.
+    try {
+         MATH_CONSTANTS.PI = 99;
+    }catch (e) {
+        console.log(e);
+    }
+    return MATH_CONSTANTS.PI;
+}
+
+const PI = freezeObj();
+console.log(PI);
