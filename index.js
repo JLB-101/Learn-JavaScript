@@ -1361,3 +1361,23 @@ const bicycle =  {
 // this is short version
 bicycle.setGear(3);
 console.log(bicycle.gear);
+
+// Use class Syntax to Define a Constructor function
+
+// contructor funtion
+// var SpaceShuttle = function(targetplanet) {
+//     this.targetplanet = targetplanet;
+// }
+
+// classe scope
+class SpaceShuttle {
+    //construct function
+    constructor(targetplanet) {
+    this.targetplanet = targetplanet;
+    }
+}
+
+// new - create object
+var zeus = new SpaceShuttle('Jupiter');
+
+console.log(zeus.targetplanet);
