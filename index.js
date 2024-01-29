@@ -1311,7 +1311,6 @@ const person = {
     age: 56
 };
 
-
 // Template Literals with multi-line and String interpolation
 const greeting = `Hello, my name is ${person.name}!
 I am ${person.age} years old.`;
@@ -1325,7 +1324,7 @@ function makeList(arr) {
     //const resultDisplayArray = null;
     const resultDisplayArray = [];
     for (let i=0; i < arr.length; i++){
-        resulDisplayArray.push(`<li class="text-warnig"> ${arr[i]}</li>`)
+        resultDisplayArray.push(`<li class="text-warnig"> ${arr[i]}</li>`)
     }
     return resultDisplayArray
 }
@@ -1336,4 +1335,5 @@ function makeList(arr) {
 ]
  */
 
-const resulDisplayArray = makeList(resul.failure);
+const resultDisplayArray = makeList(result.failure);
+console.log(resultDisplayArray);
