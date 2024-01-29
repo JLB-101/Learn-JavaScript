@@ -1382,7 +1382,7 @@ var zeus = new SpaceShuttle('Jupiter');
 
 console.log(zeus.targetplanet);
 
-/ 
+
 //  function makeClase() {
 //     return Vagetable;
 // }
@@ -1451,7 +1451,7 @@ console.log(temp);
 // const cap = capitalizeString("hello");
 
 // import file
-import {capitalizeString} from "./string_function"
+import {capitalizeString} from "./string_function";
 
 // now the functions is comming from string_function file
 const cap = capitalizeString("hello");
