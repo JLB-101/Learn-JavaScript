@@ -1381,3 +1381,19 @@ class SpaceShuttle {
 var zeus = new SpaceShuttle('Jupiter');
 
 console.log(zeus.targetplanet);
+
+/ 
+//  function makeClase() {
+//     return Vagetable;
+// }
+ function makeClase() {
+  class Vagetable {
+      constructor(name){
+           this.name = name; 
+      }
+  }
+  return Vagetable;
+}
+const Vagetable = makeClase();
+const carrot = new Vagetable('carrot');
+console.log(carrot.name);
