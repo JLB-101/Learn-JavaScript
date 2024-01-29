@@ -1304,3 +1304,9 @@ console.log[Player];
 // for (var i=0; i <= ourArray.length-1; i++){
 //     console.log(ourArray[i]);
 // }
+
+// Create Strings using Template Literals
+const person = {
+    name: "Zodiac Hasbro",
+    age: 56
+};
