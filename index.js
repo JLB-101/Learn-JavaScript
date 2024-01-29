@@ -1397,3 +1397,50 @@ console.log(zeus.targetplanet);
 const Vagetable = makeClase();
 const carrot = new Vagetable('carrot');
 console.log(carrot.name);
+
+// creating a class
+
+class Book {
+    //constructor
+    constructor(author) {
+        this._author = author;
+    }
+    //getters
+    get writer(){
+        return this._author = author;
+    }
+    //setters
+    set writer(updatedAthor) {
+        this._author = updatedAthor;
+    }
+}
+function makeClass() {
+     class Thermostat {
+         //constructor function
+         constructor(temp){
+             //_temp - alltime you see "_" is private variable 
+             this._temp = 5/9 * (temp - 32); // to cnver to celcius
+         }
+         //getters
+         get temperature() {
+             return this._temp;
+         }
+         //setters
+         set temperature(updateTemp) {
+             this._temp = updateTemp;
+         }
+     }
+    return Thermostat;
+}
+
+// accessing the objects  instatiate
+const Thermostat = makeClass();
+// create object
+const thermos = new Thermostat(76);
+// acessing the functions from the class
+let temp = thermos.temperature;
+// setting temperature
+thermos.temperature = 26;
+temp = thermos.temperature;
+
+console.log(temp);
