@@ -1337,3 +1337,15 @@ function makeList(arr) {
 
 const resultDisplayArray = makeList(result.failure);
 console.log(resultDisplayArray);
+
+// Write Concise Object Literal Declarations 
+// const createPerson = (name, age, gender) => {
+//     return {//key = value
+//         name: name,
+//         age: age,
+//         gender: gender
+//     };
+// };
+// this is short version
+const createPerson = (name, age, gender) => ({name, age, gender });
+console.log(createPerson("Zoadiac Hasbro", 56, "male"));
