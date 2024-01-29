@@ -1310,3 +1310,30 @@ const person = {
     name: "Zodiac Hasbro",
     age: 56
 };
+
+
+// Template Literals with multi-line and String interpolation
+const greeting = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+console.log(greeting);
+const result = {
+    success: ["max-length", "no-and", "prefer-arrow-functions"],
+    failure: ["no-var", "var-on-top", "linebreak"],  
+};
+function makeList(arr) {
+    //const resultDisplayArray = null;
+    const resultDisplayArray = [];
+    for (let i=0; i < arr.length; i++){
+        resulDisplayArray.push(`<li class="text-warnig"> ${arr[i]}</li>`)
+    }
+    return resultDisplayArray
+}
+/** makeList(result.failure) shuld return:
+ * [ `<li class="text-warning">no-var</li>`,
+ * `<li class="text-warning">var-no-top</li>`,
+ * `<li class="text-warning">linebreak</li>`
+]
+ */
+
+const resulDisplayArray = makeList(resul.failure);
