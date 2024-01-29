@@ -1457,3 +1457,14 @@ import {capitalizeString} from "./string_function";
 const cap = capitalizeString("hello");
 
 console.log(cap);
+
+// Use export to Reuse a Code Block
+const capitalizeString = (str) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+// export to make possible import them to another file
+export { capitalizeString };
+
+export const foo = "bar";
+export const bar = "foo";
