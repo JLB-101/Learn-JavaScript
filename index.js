@@ -1469,3 +1469,6 @@ export { capitalizeString };
 export const foo = "bar";
 export const bar = "foo";
 
+// Use * to Import Everything from a file
+// on index1.js
+// continue there
