@@ -1444,3 +1444,16 @@ thermos.temperature = 26;
 temp = thermos.temperature;
 
 console.log(temp);
+
+// Understand the Differences Between imports and require
+
+// there is no capitalize String on this file 
+// const cap = capitalizeString("hello");
+
+// import file
+import {capitalizeString} from "./string_function"
+
+// now the functions is comming from string_function file
+const cap = capitalizeString("hello");
+
+console.log(cap);
