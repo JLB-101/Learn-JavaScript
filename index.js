@@ -1349,3 +1349,15 @@ console.log(resultDisplayArray);
 // this is short version
 const createPerson = (name, age, gender) => ({name, age, gender });
 console.log(createPerson("Zoadiac Hasbro", 56, "male"));
+
+// Write Concise  Declarative Function
+const bicycle =  {
+    gear: 2,
+    setGear: function(newGear) {
+        "use strict";
+        this.gear = newGear;
+    }
+};
+// this is short version
+bicycle.setGear(3);
+console.log(bicycle.gear);
