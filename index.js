@@ -1246,3 +1246,61 @@ const half = (function () {
 })();
 console.log(stats);
 console.log(half(stats));
+
+/**Build JavaScript Objects */
+
+var ourDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything!"]
+};
+// only change code below this line..
+
+var myDog = {
+    "name": "Camper",
+    "legs": 3,
+    "tails": 2,
+    "friends": [""]    
+};
+
+//  Acessing Object Properties with Dot Notation
+var testObj = {
+    "hat": "ballcap",
+    "shirt": "Jersey",
+    "shoes": "cleats"
+};
+
+//Only chage code below this line
+var hatValue = testObj.hat; // change this line
+var shirtValue = testObj.shirt; //Change this Line
+
+//Acessing Object Properties with Bracket Notation
+testObj = {
+    "an entree": "hamburger",
+    "my side": "veggies",
+    "the drink": "water"
+};
+
+//Only change code below this line
+var entreeValue = testObj["an entree"]; // Change this line
+var entreeValue = testObj["the drink"]; // Change this line
+// Acessing Object Properties with Variables
+var testObj = {
+    12: "Namadt",
+    16: "Montana",
+    19: "Unitas",
+};
+
+// Only Change code Below this line
+
+var playerNumber = 16;
+var Player = testObj[playerNumber];
+
+console.log[Player];
+
+
+//function ourFunctionWith
+// for (var i=0; i <= ourArray.length-1; i++){
+//     console.log(ourArray[i]);
+// }
